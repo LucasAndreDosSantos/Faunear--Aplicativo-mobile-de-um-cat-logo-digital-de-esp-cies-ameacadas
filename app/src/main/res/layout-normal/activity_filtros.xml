@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0E575">
+    <Button
+        android:id="@+id/voltar_botao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#F5AA34"
+        android:text="Voltar"
+        android:textColor="#141414"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltar_botao">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Filtros"
+                android:textAllCaps="true"
+                android:textColor="#141414"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Nome"
+                android:textAllCaps="true"
+                android:textColor="#141414"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/listaNomes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/input_nome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F0E575"
+                        android:hint="NOME"
+                        android:inputType="text"
+                        android:textColor="#141414"
+                        android:textColorHint="#141414"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_nomeCientifico"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nomeCientifico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F0E575"
+                        android:hint="NOME CIENTÍFICO"
+                        android:inputType="text"
+                        android:textColor="#141414"
+                        android:textColorHint="#141414"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Classificação"
+                android:textAllCaps="true"
+                android:textColor="#141414"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/listaClassificacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="192dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/vulneravel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vulnerável"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/emPerigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Em perigo"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/criticamenteEmPerigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Criticamente em perigo"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/possivelmenteExtinta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PossivelmenteExtinta"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Localização"
+                android:textAllCaps="true"
+                android:textColor="#141414"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/listaLocalizacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBoxES"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Espírito Santo"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxMG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minas Gerais"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxRJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rio de Janeiro"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="São Paulo"
+                    android:textAllCaps="true"
+                    android:textColor="#141414"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirma_botao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#F5AA34"
+                android:text="Confirmar"
+                android:textColor="#141414" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "769838371976",
+    "firebase_url": "https://ataque-a-biodiversidade-d41f4-default-rtdb.firebaseio.com",
+    "project_id": "ataque-a-biodiversidade-d41f4",
+    "storage_bucket": "ataque-a-biodiversidade-d41f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769838371976:android:0a765ded702e3d209bfb3d",
+        "android_client_info": {
+          "package_name": "com.example.animaisemextincao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769838371976-6pofrajf0hfj0eqdirkuul7v5ht6nact.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBydLOazBWkvZVCsKStnlewIxNUgWa_z6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769838371976-6pofrajf0hfj0eqdirkuul7v5ht6nact.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

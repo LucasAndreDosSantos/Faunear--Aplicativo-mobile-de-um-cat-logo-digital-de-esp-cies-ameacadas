@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0E575"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/repteis_botao"
+        android:layout_width="304dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#02F06C"
+        android:text="Répteis"
+        android:textSize="28sp"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toStartOf="@+id/peixes_botao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invertebrados_botao" />
+
+    <Button
+        android:id="@+id/peixes_botao"
+        android:layout_width="304dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="#70B0FA"
+        android:text="Peixes"
+        android:textSize="30sp"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/repteis_botao"
+        app:layout_constraintTop_toBottomOf="@+id/mamiferos_botao" />
+
+    <Button
+        android:id="@+id/mamiferos_botao"
+        android:layout_width="304dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="#EB75D1"
+        android:text="Mamíferos"
+        android:textSize="30sp"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/invertebrados_botao"
+        app:layout_constraintTop_toBottomOf="@+id/aves_botao" />
+
+    <Button
+        android:id="@+id/aves_botao"
+        android:layout_width="304dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="#FF6825"
+        android:text="Aves"
+        android:textSize="30sp"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/anfibios_botao"
+        app:layout_constraintTop_toBottomOf="@+id/mensagemInicial" />
+
+    <Button
+        android:id="@+id/anfibios_botao"
+        android:layout_width="304dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#BEF004"
+        android:text="Anfíbios"
+        android:textSize="30sp"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toStartOf="@+id/aves_botao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensagemInicial" />
+
+    <Button
+        android:id="@+id/invertebrados_botao"
+        android:layout_width="304dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#FAAB08"
+        android:text="Invertebrados"
+        android:textSize="30sp"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toStartOf="@+id/mamiferos_botao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anfibios_botao"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/mensagemInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="QUERO CONHECER"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#141414"
+        android:textIsSelectable="true"
+        android:textSize="70sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisar_botao" />
+
+    <SearchView
+        android:id="@+id/pesquisar_botao"
+        android:layout_width="650dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="#F5F18C"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/filtros_botao"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#F5AA34"
+        android:text="FILTROS"
+        android:textColor="#141414"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pesquisar_botao"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
